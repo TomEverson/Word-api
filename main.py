@@ -5,5 +5,5 @@ app = FastAPI()
 
 @app.get('/{words}')
 def get(words):
-    word = text.word.load_words(words)
-    return word 
+    words = text.word.load_words(words)
+    return words
